@@ -106,9 +106,8 @@
                 }
             })
             return {
-              "Distinct_id": user.distinct_id,
-              "Email": user.properties.$email,
-              "city": user.properties.$city,
+              "$distinct_id": user.distinct_id,
+              "$email": user.properties.$email,
               "survey": answers
               }
           });
